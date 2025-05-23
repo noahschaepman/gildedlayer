@@ -4,123 +4,38 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>GildedLayer | Contact</title>
-<style>
-  /* Same styles as home page */
-  body {
-    margin: 0; padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #FAF9F6;
-    color: #222;
-    line-height: 1.6;
-  }
-  a {
-    text-decoration: none;
-  }
-  header {
-    background: #4CAF50;
-    padding: 1.25rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(181, 151, 90, 0.3);
-  }
-  a.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow:
-      0 0 5px rgba(255, 215, 0, 0.8),
-      0 0 10px rgba(255, 215, 0, 0.5);
-  }
-  nav a {
-    margin-left: 2rem;
-    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    text-shadow: 0 0 3px rgba(255, 215, 0, 0.6);
-  }
-  nav a:hover {
-    color: #FAF9F6;
-    text-shadow: none;
-  }
-  main {
-    max-width: 600px;
-    margin: 4rem auto 6rem;
-    padding: 0 2rem;
-  }
-  main h1 {
-    font-size: 2.5rem;
-    color: #4CAF50;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  form {
-    background: #fff;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 6px;
-  }
-  label {
-    display: block;
-    margin-bottom: 0.4rem;
-    font-weight: 600;
-    color: #4CAF50;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1.25rem;
-    border: 1.5px solid #B8860B;
-    border-radius: 4px;
-    font-size: 1rem;
-    resize: vertical;
-  }
-  input:focus, textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-    box-shadow: 0 0 5px #4CAF50;
-  }
-  button {
-    background: linear-gradient(45deg, #FFD700, #B8860B);
-    border: none;
-    color: #FAF9F6;
-    font-weight: 700;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-    transition: background 0.3s ease;
-  }
-  button:hover {
-    background: linear-gradient(45deg, #B8860B, #FFD700);
-  }
-  footer {
-    background: #4CAF50;
-    color: #B4975A;
-    text-align: center;
-    padding: 1.5rem 2rem;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
+<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
 <header>
-  <a href="/" class="logo">GildedLayer</a>
+  <a href="index.html" class="logo">GildedLayer</a>
   <nav>
-    <a href="/items.html">Items</a>
-    <a href="/pricing.html">Pricing</a>
-    <a href="/contact.html">Contact</a>
+    <a href="items.html">Items</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
   <h1>Contact Us</h1>
-  <form id="contactForm" method="POST" act
+  <form id="contactForm" method="POST" action="mailto:your-email@example.com">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="Your name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 GildedLayer. All rights reserved.
+</footer>
+
+</body>
+</html>
