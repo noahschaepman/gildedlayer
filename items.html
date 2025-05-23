@@ -4,100 +4,26 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>GildedLayer | Items</title>
-<style>
-  /* Same styles as home page */
-  body {
-    margin: 0; padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #FAF9F6;
-    color: #222;
-    line-height: 1.6;
-  }
-  a {
-    text-decoration: none;
-  }
-  header {
-    background: #4CAF50;
-    padding: 1.25rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(181, 151, 90, 0.3);
-  }
-  a.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow:
-      0 0 5px rgba(255, 215, 0, 0.8),
-      0 0 10px rgba(255, 215, 0, 0.5);
-  }
-  nav a {
-    margin-left: 2rem;
-    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    text-shadow: 0 0 3px rgba(255, 215, 0, 0.6);
-  }
-  nav a:hover {
-    color: #FAF9F6;
-    text-shadow: none;
-  }
-  main {
-    max-width: 900px;
-    margin: 4rem auto 6rem;
-    padding: 0 2rem;
-  }
-  main h1 {
-    font-size: 2.5rem;
-    color: #4CAF50;
-    margin-bottom: 1rem;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  li {
-    background: #fff;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    border-left: 5px solid #B8860B; /* gold accent */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  footer {
-    background: #4CAF50;
-    color: #B4975A;
-    text-align: center;
-    padding: 1.5rem 2rem;
-    font-size: 0.9rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
+<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
 <header>
-  <a href="/" class="logo">GildedLayer</a>
+  <a href="index.html" class="logo">GildedLayer</a>
   <nav>
-    <a href="/items.html">Items</a>
-    <a href="/pricing.html">Pricing</a>
-    <a href="/contact.html">Contact</a>
+    <a href="items.html">Items</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
   <h1>Available Items</h1>
-  <ul>
+  <ul class="items-list">
     <li>3D Printed Dragon Sculpture</li>
     <li>Articulated Mechanical Hand Model</li>
     <li>Decorative Geometric Vase</li>
-    <li>Customizable Phone Stand</li>
-    <!-- Add more items as you like -->
+    <li>Phone Stand</li>
   </ul>
 </main>
 
