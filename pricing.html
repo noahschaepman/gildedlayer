@@ -4,7 +4,76 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>GildedLayer | Pricing</title>
-<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  /* Same styles plus pricing table */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5FBF7;
+    color: #1A1A1A; line-height: 1.6;
+  }
+  a {
+    text-decoration: none; color: #B8860B; font-weight: 600; transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #FFD700; text-shadow: 0 0 5px #FFD700;
+  }
+  header {
+    background: #a0c88e; padding: 1.25rem 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 4px 8px rgba(184, 134, 11, 0.3);
+    position: sticky; top: 0; z-index: 1000;
+  }
+  .logo {
+    font-size: 1.8rem; font-weight: 700;
+    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 6px rgba(255, 215, 0, 0.8), 0 0 12px rgba(255, 215, 0, 0.6);
+    cursor: default;
+  }
+  nav a {
+    margin-left: 2rem;
+    background: linear-gradient(45deg, #FFD700, #B8860B, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-shadow: 0 0 3px rgba(255, 215, 0, 0.6);
+  }
+  nav a:hover {
+    color: #F5FBF7;
+    text-shadow: none;
+  }
+  main {
+    max-width: 900px; margin: 4rem auto 6rem; padding: 0 2rem;
+  }
+  h1 {
+    font-size: 2.8rem; color: #4CAF50; margin-bottom: 1.5rem; text-align: center;
+  }
+  table {
+    width: 100%; max-width: 600px; margin: 0 auto; border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(184, 134, 11, 0.15);
+    border-radius: 8px; overflow: hidden;
+  }
+  thead {
+    background: linear-gradient(45deg, #FFD700, #B8860B);
+    color: #F5FBF7;
+  }
+  th, td {
+    padding: 1rem 1.5rem; text-align: left;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #EAF4E6;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #D4E9CB;
+  }
+  footer {
+    background: #a0c88e; color: #6B8E23;
+    text-align: center; padding: 1.5rem 2rem;
+    font-size: 0.9rem; position: relative; bottom: 0; width: 100%;
+  }
+</style>
 </head>
 <body>
 
@@ -18,7 +87,7 @@
 </header>
 
 <main>
-  <h1>Pricing Table</h1>
+  <h1>Pricing</h1>
   <table>
     <thead>
       <tr>
@@ -27,22 +96,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>3D Printed Dragon Sculpture</td>
-        <td>$20</td>
-      </tr>
-      <tr>
-        <td>Articulated Mechanical Hand Model</td>
-        <td>$15</td>
-      </tr>
-      <tr>
-        <td>Decorative Geometric Vase</td>
-        <td>$12</td>
-      </tr>
-      <tr>
-        <td>Phone Stand</td>
-        <td>$8</td>
-      </tr>
+      <tr><td>3D Printed Dragon Sculpture</td><td>$15</td></tr>
+      <tr><td>Articulated Mechanical Hand Model</td><td>$25</td></tr>
+      <tr><td>Decorative Geometric Vase</td><td>$12</td></tr>
+      <tr><td>Phone Stand</td><td>$8</td></tr>
     </tbody>
   </table>
 </main>
